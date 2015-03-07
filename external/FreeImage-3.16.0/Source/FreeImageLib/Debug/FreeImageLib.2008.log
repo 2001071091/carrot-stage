@@ -1,0 +1,389 @@
+﻿生成启动时间为 2015/3/7 8:55:58。
+     1>项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\FreeImageLib\FreeImageLib.2008.vcxproj”在节点 6 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /I..\ZLib /I..\DeprecationManager /I..\OpenEXR\Half /I..\OpenEXR\Iex /I..\OpenEXR\IlmImf /I..\OpenEXR\Imath /I..\OpenEXR\IlmThread /I..\LibJXR\jxrgluelib /I..\LibJXR\image\sys /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D OPJ_STATIC /D FREEIMAGE_LIB /D _CRT_SECURE_NO_DEPRECATE /D LIBRAW_NODLL /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\FreeImage\BitmapAccess.cpp ..\FreeImage\ColorLookup.cpp ..\FreeImage\FreeImage.cpp ..\FreeImage\FreeImageIO.cpp ..\FreeImage\GetType.cpp ..\FreeImage\MemoryIO.cpp ..\FreeImage\PixelAccess.cpp ..\FreeImage\NNQuantizer.cpp ..\FreeImage\WuQuantizer.cpp ..\FreeImage\Conversion.cpp ..\FreeImage\Conversion16_555.cpp ..\FreeImage\Conversion16_565.cpp ..\FreeImage\Conversion24.cpp ..\FreeImage\Conversion32.cpp ..\FreeImage\Conversion4.cpp ..\FreeImage\Conversion8.cpp ..\FreeImage\ConversionFloat.cpp ..\FreeImage\ConversionRGB16.cpp ..\FreeImage\ConversionRGBF.cpp ..\FreeImage\ConversionType.cpp ..\FreeImage\ConversionUINT16.cpp ..\FreeImage\Halftoning.cpp ..\FreeImage\tmoColorConvert.cpp ..\FreeImage\tmoDrago03.cpp ..\FreeImage\tmoFattal02.cpp ..\FreeImage\tmoReinhard05.cpp ..\FreeImage\ToneMapping.cpp ..\FreeImage\J2KHelper.cpp ..\FreeImage\MNGHelper.cpp ..\FreeImage\Plugin.cpp ..\FreeImage\PluginBMP.cpp ..\FreeImage\PluginCUT.cpp ..\FreeImage\PluginDDS.cpp ..\FreeImage\PluginEXR.cpp ..\FreeImage\PluginG3.cpp ..\FreeImage\PluginGIF.cpp ..\FreeImage\PluginHDR.cpp ..\FreeImage\PluginICO.cpp ..\FreeImage\PluginIFF.cpp ..\FreeImage\PluginJ2K.cpp ..\FreeImage\PluginJNG.cpp ..\FreeImage\PluginJP2.cpp ..\FreeImage\PluginJPEG.cpp ..\FreeImage\PluginJXR.cpp ..\FreeImage\PluginKOALA.cpp ..\FreeImage\PluginMNG.cpp ..\FreeImage\PluginPCD.cpp ..\FreeImage\PluginPCX.cpp ..\FreeImage\PluginPFM.cpp ..\FreeImage\PluginPICT.cpp ..\FreeImage\PluginPNG.cpp ..\FreeImage\PluginPNM.cpp ..\FreeImage\PluginPSD.cpp ..\FreeImage\PluginRAS.cpp ..\FreeImage\PluginRAW.cpp ..\FreeImage\PluginSGI.cpp ..\FreeImage\PluginTARGA.cpp ..\FreeImage\PluginTIFF.cpp ..\FreeImage\PluginWBMP.cpp ..\FreeImage\PluginWebP.cpp ..\FreeImage\PluginXBM.cpp ..\FreeImage\PluginXPM.cpp ..\FreeImage\PSDParser.cpp ..\FreeImage\TIFFLogLuv.cpp ..\DeprecationManager\Deprecated.cpp ..\DeprecationManager\DeprecationMgr.cpp ..\FreeImage\CacheFile.cpp ..\FreeImage\MultiPage.cpp ..\FreeImage\ZLibInterface.cpp ..\Metadata\Exif.cpp ..\Metadata\FIRational.cpp ..\Metadata\FreeImageTag.cpp ..\Metadata\IPTC.cpp ..\Metadata\TagConversion.cpp ..\Metadata\TagLib.cpp ..\Metadata\XTIFF.cpp ..\FreeImageToolkit\Background.cpp ..\FreeImageToolkit\BSplineRotate.cpp ..\FreeImageToolkit\Channels.cpp ..\FreeImageToolkit\ClassicRotate.cpp ..\FreeImageToolkit\Colors.cpp ..\FreeImageToolkit\CopyPaste.cpp ..\FreeImageToolkit\Display.cpp ..\FreeImageToolkit\Flip.cpp ..\FreeImageToolkit\JPEGTransform.cpp ..\FreeImageToolkit\MultigridPoissonSolver.cpp ..\FreeImageToolkit\Rescale.cpp ..\FreeImageToolkit\Resize.cpp
+         BitmapAccess.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\bitmapaccess.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ColorLookup.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         FreeImage.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\freeimage.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         FreeImageIO.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         GetType.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         MemoryIO.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\memoryio.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PixelAccess.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pixelaccess.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         NNQuantizer.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\nnquantizer.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\quantizers.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         WuQuantizer.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\wuquantizer.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\quantizers.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Conversion.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\quantizers.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Conversion16_555.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversion16_555.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Conversion16_565.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversion16_565.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Conversion24.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversion24.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Conversion32.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversion32.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Conversion4.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Conversion8.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversion8.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ConversionFloat.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversionfloat.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ConversionRGB16.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversionrgb16.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ConversionRGBF.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversionrgbf.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ConversionType.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversiontype.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+         正在编译...
+         ConversionUINT16.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\conversionuint16.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Halftoning.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\halftoning.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         tmoColorConvert.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\tmocolorconvert.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\tonemapping.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         tmoDrago03.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\tmodrago03.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\tonemapping.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         tmoFattal02.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\tmofattal02.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\tonemapping.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         tmoReinhard05.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\tmoreinhard05.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\tonemapping.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ToneMapping.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\tonemapping.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         J2KHelper.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\j2khelper.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         MNGHelper.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\mnghelper.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Plugin.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginBMP.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginbmp.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginCUT.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginDDS.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginEXR.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginexr.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginG3.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluging3.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginGIF.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginHDR.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginhdr.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginICO.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginico.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginIFF.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginiff.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginJ2K.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginj2k.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+         正在编译...
+         PluginJNG.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginJP2.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginjp2.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginJPEG.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginjpeg.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginJXR.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrglue.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrmeta.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginKOALA.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginMNG.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginPCD.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginPCX.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginpcx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginPFM.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginpfm.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginPICT.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginPNG.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginPNM.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginpnm.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginPSD.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginRAS.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginras.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginRAW.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginraw.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginSGI.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginTARGA.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginTIFF.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginWBMP.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginwbmp.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginWebP.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+         正在编译...
+         PluginXBM.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginxbm.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PluginXPM.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\pluginxpm.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         PSDParser.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         TIFFLogLuv.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\tifflogluv.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Deprecated.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\deprecationmanager\deprecated.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         DeprecationMgr.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         CacheFile.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         MultiPage.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage\multipage.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ZLibInterface.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Exif.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\exif.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\exif.cpp(939): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         FIRational.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\firational.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\firational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         FreeImageTag.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         IPTC.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\iptc.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         TagConversion.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\tagconversion.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\firational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         TagLib.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\taglib.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         XTIFF.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\freeimagetag.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\metadata\firational.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Background.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         BSplineRotate.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\bsplinerotate.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Channels.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\channels.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ClassicRotate.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\classicrotate.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+         正在编译...
+         Colors.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\colors.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         CopyPaste.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\copypaste.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Display.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\display.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Flip.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\flip.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         JPEGTransform.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         MultigridPoissonSolver.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\multigridpoissonsolver.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\tonemapping.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Rescale.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\rescale.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\resize.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\filters.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         Resize.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\resize.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\resize.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\freeimagetoolkit\filters.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1354,5): warning MSB8012: TargetPath(E:\carrot-stage\external\FreeImage-3.16.0\Source\FreeImageLib\.\Debug\FreeImageLib.lib) does not match the Library's OutputFile property value (E:\carrot-stage\external\FreeImage-3.16.0\Source\FreeImageLib\Debug\FreeImaged.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1356,5): warning MSB8012: TargetName(FreeImageLib) does not match the Library's OutputFile property value (FreeImaged). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"Debug\FreeImaged.lib" /NOLOGO .\Debug/BitmapAccess.obj
+         .\Debug/ColorLookup.obj
+         .\Debug/FreeImage.obj
+         .\Debug/FreeImageIO.obj
+         .\Debug/GetType.obj
+         .\Debug/MemoryIO.obj
+         .\Debug/PixelAccess.obj
+         .\Debug/NNQuantizer.obj
+         .\Debug/WuQuantizer.obj
+         .\Debug/Conversion.obj
+         .\Debug/Conversion16_555.obj
+         .\Debug/Conversion16_565.obj
+         .\Debug/Conversion24.obj
+         .\Debug/Conversion32.obj
+         .\Debug/Conversion4.obj
+         .\Debug/Conversion8.obj
+         .\Debug/ConversionFloat.obj
+         .\Debug/ConversionRGB16.obj
+         .\Debug/ConversionRGBF.obj
+         .\Debug/ConversionType.obj
+         .\Debug/ConversionUINT16.obj
+         .\Debug/Halftoning.obj
+         .\Debug/tmoColorConvert.obj
+         .\Debug/tmoDrago03.obj
+         .\Debug/tmoFattal02.obj
+         .\Debug/tmoReinhard05.obj
+         .\Debug/ToneMapping.obj
+         .\Debug/J2KHelper.obj
+         .\Debug/MNGHelper.obj
+         .\Debug/Plugin.obj
+         .\Debug/PluginBMP.obj
+         .\Debug/PluginCUT.obj
+         .\Debug/PluginDDS.obj
+         .\Debug/PluginEXR.obj
+         .\Debug/PluginG3.obj
+         .\Debug/PluginGIF.obj
+         .\Debug/PluginHDR.obj
+         .\Debug/PluginICO.obj
+         .\Debug/PluginIFF.obj
+         .\Debug/PluginJ2K.obj
+         .\Debug/PluginJNG.obj
+         .\Debug/PluginJP2.obj
+         .\Debug/PluginJPEG.obj
+         .\Debug/PluginJXR.obj
+         .\Debug/PluginKOALA.obj
+         .\Debug/PluginMNG.obj
+         .\Debug/PluginPCD.obj
+         .\Debug/PluginPCX.obj
+         .\Debug/PluginPFM.obj
+         .\Debug/PluginPICT.obj
+         .\Debug/PluginPNG.obj
+         .\Debug/PluginPNM.obj
+         .\Debug/PluginPSD.obj
+         .\Debug/PluginRAS.obj
+         .\Debug/PluginRAW.obj
+         .\Debug/PluginSGI.obj
+         .\Debug/PluginTARGA.obj
+         .\Debug/PluginTIFF.obj
+         .\Debug/PluginWBMP.obj
+         .\Debug/PluginWebP.obj
+         .\Debug/PluginXBM.obj
+         .\Debug/PluginXPM.obj
+         .\Debug/PSDParser.obj
+         .\Debug/TIFFLogLuv.obj
+         .\Debug/Deprecated.obj
+         .\Debug/DeprecationMgr.obj
+         .\Debug/CacheFile.obj
+         .\Debug/MultiPage.obj
+         .\Debug/ZLibInterface.obj
+         .\Debug/Exif.obj
+         .\Debug/FIRational.obj
+         .\Debug/FreeImageTag.obj
+         .\Debug/IPTC.obj
+         .\Debug/TagConversion.obj
+         .\Debug/TagLib.obj
+         .\Debug/XTIFF.obj
+         .\Debug/Background.obj
+         .\Debug/BSplineRotate.obj
+         .\Debug/Channels.obj
+         .\Debug/ClassicRotate.obj
+         .\Debug/Colors.obj
+         .\Debug/CopyPaste.obj
+         .\Debug/Display.obj
+         .\Debug/Flip.obj
+         .\Debug/JPEGTransform.obj
+         .\Debug/MultigridPoissonSolver.obj
+         .\Debug/Rescale.obj
+         .\Debug/Resize.obj
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\LibJPEG\Debug\LibJPEG.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Debug\LibJXR.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\LibOpenJPEG\Debug\LibOpenJPEG.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\ZLib\Debug\ZLib.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\LibPNG\Debug\LibPNG.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\LibRawLite\Debug\LibRawLite.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\LibTIFF4\Debug\LibTIFF4.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\LibWebP\Debug\LibWebP.lib"
+         "E:\carrot-stage\external\FreeImage-3.16.0\Source\OpenEXR\Debug\OpenEXR.lib"
+     1>LINK : fatal error LNK1181: 无法打开输入文件“E:\carrot-stage\external\FreeImage-3.16.0\Source\OpenEXR\Debug\OpenEXR.lib”
+     1>已完成生成项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\FreeImageLib\FreeImageLib.2008.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:29.43

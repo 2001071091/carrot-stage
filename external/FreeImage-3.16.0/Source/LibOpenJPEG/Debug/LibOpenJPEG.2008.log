@@ -1,0 +1,51 @@
+﻿生成启动时间为 2015/3/7 8:56:50。
+     1>项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\LibOpenJPEG\LibOpenJPEG.2008.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D OPJ_STATIC /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TC /analyze- /errorReport:prompt bio.c cio.c dwt.c event.c function_list.c image.c invert.c j2k.c jp2.c mct.c mqc.c openjpeg.c opj_clock.c pi.c raw.c t1.c t2.c tcd.c tgt.c
+         bio.c
+         cio.c
+         dwt.c
+         event.c
+         function_list.c
+         image.c
+         invert.c
+         j2k.c
+         jp2.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libopenjpeg\jp2.c(844): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         mct.c
+         mqc.c
+         openjpeg.c
+         opj_clock.c
+         pi.c
+         raw.c
+         t1.c
+         t2.c
+         tcd.c
+         tgt.c
+         正在生成代码...
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\LibOpenJPEG.lib" /NOLOGO .\Debug/bio.obj
+         .\Debug/cio.obj
+         .\Debug/dwt.obj
+         .\Debug/event.obj
+         .\Debug/function_list.obj
+         .\Debug/image.obj
+         .\Debug/invert.obj
+         .\Debug/j2k.obj
+         .\Debug/jp2.obj
+         .\Debug/mct.obj
+         .\Debug/mqc.obj
+         .\Debug/openjpeg.obj
+         .\Debug/opj_clock.obj
+         .\Debug/pi.obj
+         .\Debug/raw.obj
+         .\Debug/t1.obj
+         .\Debug/t2.obj
+         .\Debug/tcd.obj
+         .\Debug/tgt.obj
+         LibOpenJPEG.2008.vcxproj -> E:\carrot-stage\external\FreeImage-3.16.0\Source\LibOpenJPEG\.\Debug\LibOpenJPEG.lib
+     1>已完成生成项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\LibOpenJPEG\LibOpenJPEG.2008.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.94

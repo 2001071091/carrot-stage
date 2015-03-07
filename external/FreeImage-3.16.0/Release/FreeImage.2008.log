@@ -1,0 +1,18 @@
+﻿生成启动时间为 2015/3/7 10:39:09。
+     1>项目“E:\carrot-stage\external\FreeImage-3.16.0\FreeImage.2008.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         FreeImage.2008.vcxproj -> E:\carrot-stage\external\FreeImage-3.16.0\.\Release\FreeImage.dll
+       PostBuildEvent:
+         copy Release\FreeImage.dll Dist
+         copy Release\FreeImage.lib Dist
+         copy Source\FreeImage.h Dist
+         
+         :VCEnd
+         已复制         1 个文件。
+         已复制         1 个文件。
+         已复制         1 个文件。
+     1>已完成生成项目“E:\carrot-stage\external\FreeImage-3.16.0\FreeImage.2008.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.18

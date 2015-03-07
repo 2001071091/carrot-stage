@@ -1,0 +1,187 @@
+﻿生成启动时间为 2015/3/7 8:56:39。
+     1>项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\LibJXR\LibJXR.2008.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./image/sys /I./jxrgluelib /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D DISABLE_PERF_MEASUREMENT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt image\decode\decode.c image\decode\JXRTranscode.c image\decode\postprocess.c image\decode\segdec.c image\decode\strdec.c image\decode\strdec_x86.c image\decode\strInvTransform.c image\decode\strPredQuantDec.c image\encode\encode.c image\encode\segenc.c image\encode\strenc.c image\encode\strenc_x86.c image\encode\strFwdTransform.c image\encode\strPredQuantEnc.c image\sys\adapthuff.c image\sys\image.c image\sys\strcodec.c image\sys\strPredQuant.c image\sys\strTransform.c jxrgluelib\JXRGlue.c jxrgluelib\JXRGlueJxr.c jxrgluelib\JXRGluePFC.c jxrgluelib\JXRMeta.c
+         JXRMeta.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrmeta.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrmeta.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrglue.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         JXRGluePFC.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrgluepfc.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrglue.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrmeta.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         JXRGlueJxr.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrgluejxr.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrglue.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrmeta.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         JXRGlue.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrglue.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrglue.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\jxrgluelib\jxrmeta.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strTransform.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strtransform.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strtransform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strPredQuant.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strpredquant.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strcodec.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\perftimer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         image.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\image.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         adapthuff.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\adapthuff.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strPredQuantEnc.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\strpredquantenc.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\encode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strFwdTransform.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\strfwdtransform.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strtransform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\encode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strenc_x86.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\strenc_x86.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strenc.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\strenc.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\encode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strtransform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\perftimer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         segenc.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\segenc.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\encode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         encode.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\encode.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\encode\encode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strPredQuantDec.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\strpredquantdec.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strInvTransform.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\strinvtransform.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strtransform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\decode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strdec_x86.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\strdec_x86.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\decode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         strdec.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\strdec.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\decode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strtransform.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\perftimer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         segdec.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\segdec.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\decode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+         正在编译...
+         postprocess.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\postprocess.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         JXRTranscode.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\jxrtranscode.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\decode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         decode.c
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\decode.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\strcodec.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\windowsmediaphoto.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\sys\common.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\x86\x86.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\external\freeimage-3.16.0\source\libjxr\image\decode\decode.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"E:\carrot-stage\external\FreeImage-3.16.0\Debug\LibJXR.lib" /NOLOGO Debug\decode.obj
+         Debug\JXRTranscode.obj
+         Debug\postprocess.obj
+         Debug\segdec.obj
+         Debug\strdec.obj
+         Debug\strdec_x86.obj
+         Debug\strInvTransform.obj
+         Debug\strPredQuantDec.obj
+         Debug\encode.obj
+         Debug\segenc.obj
+         Debug\strenc.obj
+         Debug\strenc_x86.obj
+         Debug\strFwdTransform.obj
+         Debug\strPredQuantEnc.obj
+         Debug\adapthuff.obj
+         Debug\image.obj
+         Debug\strcodec.obj
+         Debug\strPredQuant.obj
+         Debug\strTransform.obj
+         Debug\JXRGlue.obj
+         Debug\JXRGlueJxr.obj
+         Debug\JXRGluePFC.obj
+         Debug\JXRMeta.obj
+         LibJXR.2008.vcxproj -> E:\carrot-stage\external\FreeImage-3.16.0\Debug\LibJXR.lib
+     1>已完成生成项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\LibJXR\LibJXR.2008.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.45

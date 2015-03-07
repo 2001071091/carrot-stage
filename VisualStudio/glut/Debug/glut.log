@@ -1,0 +1,31 @@
+﻿生成启动时间为 2015/3/7 9:12:53。
+     1>项目“E:\carrot-stage\VisualStudio\glut\glut.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\test\glut\main.cpp
+         main.cpp
+     1>e:\carrot-stage\external\freeimage-3.16.0\dist\freeimage.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\carrot-stage\test\glut\main.cpp(97): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>e:\carrot-stage\test\glut\main.cpp(99): warning C4305: “参数”: 从“double”到“GLfloat”截断
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\carrot-stage\VisualStudio\Debug\glut.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\carrot-stage\VisualStudio\Debug\glut.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\carrot-stage\VisualStudio\Debug\glut.lib" /MACHINE:X86 Debug\main.obj
+         freeglut_static.lib(freeglut_init.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+     1>LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/LTCG”规范)
+     1>main.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+     1>LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_Unload@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_Load@12
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetFIFFromFilename@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_FIFSupportsReading@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetFileType@8
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetBits@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetBPP@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetWidth@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetHeight@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetPitch@4
+     1>carrot-stage.lib(utils.obj) : error LNK2001: 无法解析的外部符号 __imp__FreeImage_GetPalette@4
+     1>E:\carrot-stage\VisualStudio\Debug\glut.exe : fatal error LNK1120: 11 个无法解析的外部命令
+     1>已完成生成项目“E:\carrot-stage\VisualStudio\glut\glut.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.09

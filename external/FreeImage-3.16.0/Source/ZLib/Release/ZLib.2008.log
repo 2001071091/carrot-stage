@@ -1,0 +1,54 @@
+﻿生成启动时间为 2015/3/7 10:30:24。
+     1>项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\ZLib\ZLib.2008.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\zlib /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MT /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc120.pdb" /Gd /TC /analyze- /errorReport:prompt adler32.c compress.c crc32.c deflate.c gzclose.c gzlib.c gzread.c gzwrite.c infback.c inffast.c inflate.c inftrees.c trees.c uncompr.c zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzclose.c
+         gzlib.c
+     1>gzlib.c(245): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(336) : 参见“open”的声明
+         gzread.c
+     1>gzread.c(30): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(337) : 参见“read”的声明
+     1>gzread.c(591): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(326) : 参见“close”的声明
+         gzwrite.c
+     1>gzwrite.c(84): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(342) : 参见“write”的声明
+     1>gzwrite.c(102): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(342) : 参见“write”的声明
+     1>gzwrite.c(573): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(326) : 参见“close”的声明
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+         正在生成代码...
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Release\ZLib.lib" /NOLOGO .\Release/adler32.obj
+         .\Release/compress.obj
+         .\Release/crc32.obj
+         .\Release/deflate.obj
+         .\Release/gzclose.obj
+         .\Release/gzlib.obj
+         .\Release/gzread.obj
+         .\Release/gzwrite.obj
+         .\Release/infback.obj
+         .\Release/inffast.obj
+         .\Release/inflate.obj
+         .\Release/inftrees.obj
+         .\Release/trees.obj
+         .\Release/uncompr.obj
+         .\Release/zutil.obj
+         ZLib.2008.vcxproj -> E:\carrot-stage\external\FreeImage-3.16.0\Source\ZLib\.\Release\ZLib.lib
+     1>已完成生成项目“E:\carrot-stage\external\FreeImage-3.16.0\Source\ZLib\ZLib.2008.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.41
