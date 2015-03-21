@@ -1,6 +1,10 @@
 #include "utils.h"
 #include <FreeImage.h>
 
+
+#include <fstream>
+#include <iostream>
+
 using com_yoekey_3d::GLBITMAP;
 
 namespace com_yoekey_3d{
@@ -118,4 +122,124 @@ GLuint com_yoekey_3d::loadTexture(const char *filename)
 		FreeImage_DeInitialise();
 	#endif  
 	return tex;
+}
+GLuint com_yoekey_3d::loadShaderFromFile(GLenum type, const char *path){
+
+	FILE* fp;
+	fp = fopen(path, "rb");
+	if (fp == NULL){
+		printf("file not found!\n");
+		return 0;
+	}
+	//把文件的位置指针移到文件尾
+	fseek(fp, 0L, SEEK_END);
+		//获取文件长度;
+	long length = ftell(fp);
+	fseek(fp, 0L, SEEK_SET);
+	char *src = new char[length+1];
+	fread(src, length, 1, fp);
+	src[length] = 0;
+	
+	//printf("%s\n", src);
+	GLuint result = loadShader(type, src);
+
+	fclose(fp);
+	delete src;
+	return result;
+}
+
+GLuint com_yoekey_3d::loadShader(GLenum type,const char *src){
+	// Create the shader object
+	GLuint shader = glCreateShader(type);
+	if (shader == 0) {
+		std::cout << "Error: failed to create shader.\n";
+		return 0;
+	}
+
+	// Load the shader source
+	glShaderSource(shader, 1, &src, NULL);
+
+	// Compile the shader
+	glCompileShader(shader);
+
+	// Check the compile status
+	GLint compiled = 0;
+	glGetShaderiv(shader, GL_COMPILE_STATUS, &compiled);
+
+	if (!compiled) {
+		GLint infoLen = 0;
+		glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &infoLen);
+
+		if (infoLen > 1) {
+			char * infoLog = new char[infoLen];
+			glGetShaderInfoLog(shader, infoLen, NULL, infoLog);
+			std::cout << infoLog << '\n';
+			delete infoLog;
+		}
+
+		glDeleteShader(shader);
+		return 0;
+	}
+
+	return shader;
+}
+
+
+GLuint com_yoekey_3d::setupProgram(GLuint vertexShader, GLuint fragmentShader){
+
+	// Create program, attach shaders.
+	GLuint _programHandle = glCreateProgram();
+	if (!_programHandle) {
+		std::cout<<"Failed to create program.\n";
+		return 0;
+	}
+
+	glAttachShader(_programHandle, vertexShader);
+	glAttachShader(_programHandle, fragmentShader);
+
+	/*
+	va_list attributeList;
+	va_start(attributeList, fragmentShader);
+	char *nextArg;
+	int iArgNum = va_arg(attributeList, int);
+	for (int i = 0; i < iArgNum; i++){
+		int index = va_arg(attributeList, int);
+		nextArg = va_arg(attributeList, char*);
+		glBindAttribLocation(_programHandle, index, nextArg);
+	}
+	va_end(attributeList);
+	*/
+
+	// Link program
+	//
+	glLinkProgram(_programHandle);
+
+	// Check the link status
+	GLint linked;
+	glGetProgramiv(_programHandle, GL_LINK_STATUS, &linked);
+	if (!linked)
+	{
+		GLint infoLen = 0;
+		glGetProgramiv(_programHandle, GL_INFO_LOG_LENGTH, &infoLen);
+
+		if (infoLen > 1)
+		{
+			char * infoLog = new char[infoLen];
+			glGetProgramInfoLog(_programHandle, infoLen, NULL, infoLog);
+			std::cout << infoLog << '\n';
+			delete infoLog;
+		}
+
+		glDeleteProgram(_programHandle);
+		_programHandle = 0;
+		return 0;
+	}
+
+	return _programHandle;
+
+	//glUseProgram(_programHandle);
+
+	// Get attribute slot from program
+	//
+	//_positionSlot = glGetAttribLocation(_programHandle, "vPosition");
 }

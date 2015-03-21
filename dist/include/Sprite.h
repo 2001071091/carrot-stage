@@ -14,7 +14,7 @@
 	#pragma comment(lib,"carrot-stage.lib")
 #endif
 
-#include <GL/gl.h>
+#include <GL\glew.h>
 #include <vector>
 
 using namespace std;
@@ -26,22 +26,24 @@ namespace com_yoekey_3d {
 		Sprite();
 		virtual ~Sprite();
 
-		void load_model(const char* file);
-		int load_anim(const char* file);
+		void load_model(const char*);
 		void render();
 
 		float x, y, z;
 		float rotaion;
 		float scaleX, scaleY, scaleZ;
 		void scale(GLfloat);
+		void to_vbo();
+		void clear_vbo();
 	private:
-		vector<GLfloat> verts;
-		vector<GLfloat> norms;
-		vector<GLfloat> texcoords;
+		vector<GLfloat>* verts;
+		vector<GLfloat>* norms;
+		vector<GLfloat>* texcoords;
 
-		vector<GLint*> indics;
-
-		void loadFrom_obj(const char* path);
+		bool use_vbo = false;
+		GLuint vbo_indics[3];
+		void loadFrom_obj(const char*);
+		//void push(vector<GLfloat>* vsrc, vector<GLfloat>* vdes, int index, int num);
 	};
 }
 
