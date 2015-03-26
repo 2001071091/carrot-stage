@@ -17,13 +17,35 @@ namespace com_yoekey_3d {
 		unsigned char           *buf;
 		GLuint          rgb_mode;
 	}GLBITMAP;
+	struct xml_node_attrib{
+		char* name;
+		char* value;
+	};
+	struct xml_node{
+		unsigned int attrib_count;
+		unsigned int child_count;
 
+		char* name;
+		char* inner_text;
+
+		xml_node_attrib* attribs;
+		xml_node* children;
+	};
+	struct xml_node_token{
+		char* name;
+		unsigned int attrib_count;
+		xml_node_attrib* attribs;
+		bool end;//是否结束标签
+		bool single;//是否是独立标签
+		bool text;
+	};
 	void obj_split_face_cell(char* cell, GLint* is);
 	GLuint loadTexture(const char *filename);
 	void FreeGLBitmap(GLBITMAP *glbmp);
 	GLuint loadShader(GLenum type,const char *src);
 	GLuint loadShaderFromFile(GLenum type,const char *path);
 	GLuint setupProgram(GLuint vertexShader, GLuint fragmentShader);
+	xml_node* load_xml(const char *filename);
 	//GLuint loadShaderFromFile(const char *vertFile, const char *fragFile);
 }
 

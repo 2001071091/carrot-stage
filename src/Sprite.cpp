@@ -46,9 +46,26 @@ void Sprite::to_vbo(){
 
 void Sprite::load_model(const char* path){
 	const char * ext =strrchr(path, '.');
-	if (strcmp(ext, ".obj") == 0){
+	if (strcmp(ext, ".obj") == 0
+		|| strcmp(ext, ".OBJ") == 0){
 		loadFrom_obj(path);
 	}
+	else if (strcmp(ext, ".dae") == 0 
+		|| strcmp(ext, ".DAE") == 0){
+		loadFrom_dae(path);
+	}
+}
+
+void Sprite::loadFrom_dae(const char* path){
+	ifstream fin;
+	fin.open(path, ios_base::in);
+	if (fin.fail()) {
+		cout << "file open error\n";
+		return;
+	}
+
+
+	fin.close();
 }
 
 void Sprite::loadFrom_obj(const char* path) {
@@ -91,7 +108,8 @@ void Sprite::loadFrom_obj(const char* path) {
 			//cout<<root;
 		}
 		if (strcmp(token, "g") == 0) {
-			
+			token = strtok(NULL, " ");
+			if (strcmp(token, "Bip01")==0)break;
 		}
 		if (strcmp(token, "v") == 0) {
 			_verts.push_back(atof(strtok(NULL, " ")));
@@ -132,10 +150,7 @@ void Sprite::loadFrom_obj(const char* path) {
 		}
 	}
 
-	//std::cout << "verts:" << verts.size()/3 << "\n";
-	//std::cout << "norms:" << _norms.size() / 3 << "\n";
-	//std::cout << "texcoords:" << _texcoords.size() / 2 << "\n";
-	//std::cout << "indics:" << indics.size() / 4 << "\n";
+	//std::cout << "verts:" << verts->size() << "\n";
 	fin.close();
 }
 
@@ -144,6 +159,10 @@ void Sprite::render() {
 	glTranslatef(x, y, z);
 	glRotatef(rotaion, 0, 1, 0);
 	if (scaleX != 1 || scaleY != 1 || scaleZ != 1)glScaled(scaleX, scaleY, scaleZ);
+
+	/*
+	处理纹理
+	*/
 
 	GLint program;
 	glGetIntegerv(GL_CURRENT_PROGRAM, &program);

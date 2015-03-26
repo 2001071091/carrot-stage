@@ -25,9 +25,9 @@ void draw_back() {
 	glBlendFunc(GL_ONE, GL_ONE);
 	glColor4f(1, 0, 0,1);
 	glBegin(GL_TRIANGLES);
-		glVertex3f(0.5, 0.5, -1);
-		glVertex3f(-0.5, 0.5, -1);
-		glVertex3f(0, 0, -1);
+		glVertex3f(1, 1, 0);
+		glVertex3f(-1, 1, 0);
+		glVertex3f(0, 0, 0);
 	glEnd();
 	glDisable(GL_BLEND);
 	glColor4f(1, 1, 1, 1);
@@ -79,18 +79,15 @@ void render(void) {
 	
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
-	
+	//draw_back();
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, tex);
 	for (int i = 0; i < SPRITE_NUM; i++){
 		sprite[i].rotaion +=(i%2==1?1:-0.5);
-		sprite[i].scale(1.3);
+		sprite[i].scale(0.7);
 		sprite[i].render();
 	}
 
-	draw_back();
-
-	
 	/*
 	glDisable(GL_LIGHTING);
 	glMatrixMode(GL_PROJECTION);
@@ -132,12 +129,15 @@ void setupRC(void) {
 	glEnable(GL_DEPTH_TEST);
 	//glDepthFunc(GL_LEQUAL);
 
-	tex = loadTexture("../../data/3_KDJH_01.png");
+	//tex = loadTexture("../../data/3_KDJH_01.png");
+	//tex = loadTexture("../../data/hr_hair.dds");
+	tex = loadTexture("../../data/hr_body.dds");
 
 	glewInit();
 
 	for (int i = 0; i < SPRITE_NUM; i++){
-		sprite[i].load_model("../../data/zz.obj");
+		sprite[i].load_model("../../data/huangrong.obj");
+		//sprite[i].load_model("../../data/body.obj");
 		sprite[i].to_vbo();
 		//sprite[i].x = rand() % 100;
 		//sprite[i].z = rand() % 100;
@@ -155,9 +155,7 @@ void setupRC(void) {
 
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(60.0, 800.0 / 600.0, 1., 240.0);
-	GLfloat projection_matrix[16];
-	glGetFloatv(GL_PROJECTION_MATRIX, projection_matrix);
+	gluPerspective(60.0, 800.0 / 600.0, 1.0, 240.0);
 
 
 	glMatrixMode(GL_MODELVIEW);
@@ -165,14 +163,17 @@ void setupRC(void) {
 
 	//cout << sprite[0].x << ',' << sprite[0].y + 50 << ',' << sprite[0].z - 120<<'\n';
 
-	gluLookAt(0, 120, 120,
-		0, 50, 0,
+	gluLookAt(0,2,2,
+		0,0,0,
 		0.0, 1.0, 0.);
 	//SetupLights();
 
 	GLfloat view_matrix[16];
 	glGetFloatv(GL_MODELVIEW_MATRIX, view_matrix);
 	glUniformMatrix4fv(glGetUniformLocation(program, "view_mat"), 1, GL_TRUE, view_matrix);
+
+	GLfloat projection_matrix[16];
+	glGetFloatv(GL_PROJECTION_MATRIX, projection_matrix);
 	glUniformMatrix4fv(glGetUniformLocation(program, "proj_mat"), 1, GL_TRUE, projection_matrix);
 
 	// Get attribute slot from program
@@ -196,6 +197,10 @@ void setupRC(void) {
  *
  */
 int main(int argc, char** argv) {
+
+	auto node =load_xml("../../data/skin.DAE");
+
+	std::cout << node->name << '\n';
 
 	//printf("version:%s\n", FreeImage_GetVersion());
 

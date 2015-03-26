@@ -4,7 +4,7 @@ in vec2 tex_coords;
 in vec3 pix_normal;
 vec4 light =vec4(0,0,1,1);//世界坐标,光源方向
 vec3 specular =vec3(0.3,0.3,0.3);
-float shininess =1;
+float shininess =50;
 
 uniform sampler2D color_map;
 uniform mat4 view_mat;//视角坐标系到世界坐标系的 变换矩阵
@@ -18,10 +18,10 @@ void main(void){
 	
 	
 	//镜面光
-	vec4 eye_normal =vec4(0,0,1,1);
+	vec4 eye_normal =vec4(0,0,1,0);
 	eye_normal=model_mat*eye_normal;
 	vec3 vref =reflect(-light.xyz,pix_normal);
-	float angle =max(0,dot(eye_normal.xyz,vref));
+	float angle =max(0,dot(normalize(eye_normal.xyz),normalize(vref)));
 	float spec =pow(angle,shininess);
 	s_color.xyz+=(spec*specular);
 

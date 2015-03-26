@@ -10,7 +10,7 @@
 
 #ifdef _WIN32
 	#include <windows.h>
-	#pragma comment(lib,"opengl32.lib")
+	#pragma comment(lib, "glew32.lib")
 	#pragma comment(lib,"carrot-stage.lib")
 #endif
 
@@ -36,13 +36,16 @@ namespace com_yoekey_3d {
 		void to_vbo();
 		void clear_vbo();
 	private:
-		vector<GLfloat>* verts;
-		vector<GLfloat>* norms;
-		vector<GLfloat>* texcoords;
+		vector<GLfloat>* verts;		//顶点位置
+		vector<GLfloat>* norms;		//顶点法线
+		vector<GLfloat>* texcoords;	//顶点贴图坐标
+		vector<GLuint>* bones;		//顶点关联骨骼
+		vector<GLfloat>* weights;	//顶点骨骼权值
 
 		bool use_vbo = false;
 		GLuint vbo_indics[3];
 		void loadFrom_obj(const char*);
+		void loadFrom_dae(const char*);
 		//void push(vector<GLfloat>* vsrc, vector<GLfloat>* vdes, int index, int num);
 	};
 }

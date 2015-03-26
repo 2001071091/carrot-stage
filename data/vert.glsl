@@ -10,14 +10,22 @@ layout (location = 0) in vec4 vertex;
 layout (location = 1) in vec3 normal;
 layout (location = 2) in vec2 texcoord;
 vec4 light =vec4(0,0,1,1);//世界坐标,光源方向
-vec3 ambient =vec3(0.2,0.2,0.2);
-vec3 diffuse =vec3(0.8,0.8,0.8);
+vec3 ambient =vec3(0.4,0.4,0.4);
+vec3 diffuse =vec3(0.7,0.7,0.7);
 void main(void){
-	gl_Position =ftransform();//默认的变换管线
+	mat4 mm =transpose(model_mat);
+	mat4 pm =transpose(proj_mat);
+	mat4 vm =transpose(view_mat);
+	vec4 tmp =vertex;
+	tmp =pm*mm*tmp;
+	gl_Position =tmp;
+	
+	//gl_Position =ftransform();//默认的变换管线
+	
 	tex_coords =texcoord;//设置贴图坐标
 	
 	//光线方向需要转换到模型坐标才能和模型坐标的法线进行运算
-	light =model_mat*inverse(view_mat)*light;//世界坐标->视角坐标->模型坐标,由于OpenGL是列向量,所以矩阵变换顺序是 CBA*V
+	light =inverse(mm)*vm*light;//世界坐标->视角坐标->模型坐标,由于OpenGL是列向量,所以矩阵变换顺序是 CBA*V
 	
 	vec4 s_color =vec4(0,0,0,0);
 	//环境光
