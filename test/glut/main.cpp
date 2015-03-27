@@ -6,6 +6,7 @@
 
 
 #include "Sprite.h" 
+#include "Mode.h"
 #include <utils.h>
 #include <iostream>
 #include "GL/glut.h"
@@ -197,10 +198,12 @@ void setupRC(void) {
  *
  */
 int main(int argc, char** argv) {
+	Mode mod;
+	mod.load("../../data/skin.DAE");
+	//auto node =load_xml("../../data/skin.DAE");
 
-	auto node =load_xml("../../data/skin.DAE");
-
-	std::cout << node->name << '\n';
+	//std::cout << node->name << '\n';
+	
 
 	//printf("version:%s\n", FreeImage_GetVersion());
 

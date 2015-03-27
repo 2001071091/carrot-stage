@@ -21,7 +21,7 @@
     <ClCompile Include="..\src\utils.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Mode.cpp">
+    <ClCompile Include="..\src\Mode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,7 +32,7 @@
     <ClInclude Include="..\src\utils.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Mode.h">
+    <ClInclude Include="..\src\Mode.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

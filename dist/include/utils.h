@@ -41,12 +41,14 @@ namespace com_yoekey_3d {
 	};
 	void obj_split_face_cell(char* cell, GLint* is);
 	GLuint loadTexture(const char *filename);
+	GLBITMAP* loadImage(const char *filename);
 	void FreeGLBitmap(GLBITMAP *glbmp);
 	GLuint loadShader(GLenum type,const char *src);
 	GLuint loadShaderFromFile(GLenum type,const char *path);
 	GLuint setupProgram(GLuint vertexShader, GLuint fragmentShader);
 	xml_node* load_xml(const char *filename);
-	//GLuint loadShaderFromFile(const char *vertFile, const char *fragFile);
+	void free_xml_node(xml_node*);
+	const char* get_xml_node_attrib(xml_node node, const char* name);
 }
 
 #endif

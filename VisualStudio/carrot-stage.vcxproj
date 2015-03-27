@@ -27,14 +27,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\Mode.cpp" />
     <ClCompile Include="..\src\Sprite.cpp" />
     <ClCompile Include="..\src\utils.cpp" />
-    <ClCompile Include="Mode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\Mode.h" />
     <ClInclude Include="..\src\Sprite.h" />
     <ClInclude Include="..\src\utils.h" />
-    <ClInclude Include="Mode.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2EC6ED44-AA64-48D9-B163-741AF5B39C2B}</ProjectGuid>

@@ -262,19 +262,43 @@ namespace com_yoekey_3d{
 		//printf("node[%s],end[%d],single[%d],\n", name, end, single);
 		return result;
 	}
-
+	void free_xml_node(xml_node node){
+		//printf("free node[%s]\n", node.name);
+		free(node.name);
+		free(node.inner_text);
+		for (int i = 0; i < node.attrib_count; i++){
+			free(node.attribs[i].name);
+			free(node.attribs[i].value);
+		}
+		free(node.attribs);
+		for (int i = 0; i < node.child_count; i++){
+			free_xml_node(node.children[i]);
+		}
+		free(node.children);
+	}
 	void free_xml_node(xml_node* node){
+		//printf("free node[%s]\n", node->name);
 		free(node->name);
 		free(node->inner_text);
 		for (int i = 0; i < node->attrib_count; i++){
 			free(node->attribs[i].name);
 			free(node->attribs[i].value);
 		}
+		free(node->attribs);
 		for (int i = 0; i < node->child_count; i++){
-			free_xml_node(&node->children[i]);
+			free_xml_node(node->children[i]);
 		}
+		free(node->children);
 		free(node);
 	}
+	const char* get_xml_node_attrib(xml_node node, const char* name){
+		for (int i = 0; i < node.attrib_count; i++){
+			if (strcmp(node.attribs[i].name, name) == 0)
+				return node.attribs[i].value;
+		}
+		return NULL;
+	}
+
 	xml_node* load_xml_node(FILE* fp){
 		xml_node_token token =read_xml_node_token(fp);
 		char* inner_text = NULL;
@@ -390,6 +414,42 @@ void com_yoekey_3d::FreeGLBitmap(GLBITMAP *glbmp)
 	}
 }
 
+GLBITMAP* com_yoekey_3d::loadImage(const char *filename){
+#ifdef FREEIMAGE_LIB
+	FreeImage_Initialise(FALSE);
+#endif  
+	GLuint tex = 0;
+	FIBITMAP *bitmap = NULL;
+	FREE_IMAGE_FORMAT fif = FIF_UNKNOWN;
+
+	GLBITMAP *glbmp = NULL;
+
+	fif = FreeImage_GetFileType(filename, 0);
+	if (FIF_UNKNOWN == fif) {
+		//printf("unknown type: %d\n", fif);
+		fif = FreeImage_GetFIFFromFilename(filename);
+		if (FIF_UNKNOWN == fif)
+			return NULL;
+	}
+	if (FreeImage_FIFSupportsReading(fif))
+		bitmap = FreeImage_Load(fif, filename, 0);
+
+	if (!bitmap)
+		return NULL;
+
+	//printf("bit: %d\n", FreeImage_GetBPP(bitmap));
+
+	glbmp = FIBitmap2GLBitmap(bitmap);
+	if (!glbmp)
+		return NULL;
+
+	FreeImage_Unload(bitmap);
+
+#ifdef FREEIMAGE_LIB
+	FreeImage_DeInitialise();
+#endif  
+	return glbmp;
+}
 
 GLuint com_yoekey_3d::loadTexture(const char *filename)
 {
