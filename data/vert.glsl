@@ -1,41 +1,24 @@
 #version 330 compatibility
 
-out vec4 color;
-out vec2 tex_coords;
-out vec3 pix_normal;
-uniform mat4 view_mat;//视角坐标系到世界坐标系的 变换矩阵
-uniform mat4 proj_mat;
-uniform mat4 model_mat;//视角坐标系到模型坐标系的 变换矩阵
-layout (location = 0) in vec4 vertex;
-layout (location = 1) in vec3 normal;
-layout (location = 2) in vec2 texcoord;
-vec4 light =vec4(0,0,1,1);//世界坐标,光源方向
-vec3 ambient =vec3(0.4,0.4,0.4);
-vec3 diffuse =vec3(0.7,0.7,0.7);
+layout (location = 0) in vec3 position;			//位置
+layout (location = 1) in vec3 normal;			//法线
+layout (location = 2) in vec2 texcoord;			//贴图坐标
+layout (location = 3) in float material_idx;	//材质索引
+layout (location = 4) in vec4 bone_idx;			//关联骨骼索引
+layout (location = 5) in vec4 bone_weight;		//骨骼权值
+
+out vec2 tex_coord;		//贴图坐标发送给片段着色器(插值)
+out vec3 pix_normal;	//用来计算光照的插值法线
+flat out float indics;	//材质索引发送给片段着色器(不插值)
+
 void main(void){
-	mat4 mm =transpose(model_mat);
-	mat4 pm =transpose(proj_mat);
-	mat4 vm =transpose(view_mat);
-	vec4 tmp =vertex;
-	tmp =pm*mm*tmp;
-	gl_Position =tmp;
-	
-	//gl_Position =ftransform();//默认的变换管线
-	
-	tex_coords =texcoord;//设置贴图坐标
-	
-	//光线方向需要转换到模型坐标才能和模型坐标的法线进行运算
-	light =inverse(mm)*vm*light;//世界坐标->视角坐标->模型坐标,由于OpenGL是列向量,所以矩阵变换顺序是 CBA*V
-	
-	vec4 s_color =vec4(0,0,0,0);
-	//环境光
-	s_color.xyz+=ambient;
-	
-	//漫反射
-	float diff =max(0,dot(light.xyz,normal));//法线和光源方向的点乘就是漫反射的强度值(-1到1),两个方向垂直时为0,相同时最大
-	s_color.xyz+=(diff*diffuse);
-	
+	tex_coord = texcoord;
+	indics =material_idx;
 	pix_normal =normal;
 	
-	color =s_color;
+	vec4 mod_pos=ftransform();//默认的变换管线
+	
+	//骨骼变换
+	 
+	gl_Position =mod_pos;
 }

@@ -18,7 +18,7 @@ using namespace com_yoekey_3d;
 
 Sprite sprite[SPRITE_NUM];
 //���ù���  
-
+Mode mod;
 void draw_back() {
 	glEnable(GL_BLEND);
 	glDisable(GL_TEXTURE_2D);
@@ -72,7 +72,6 @@ void SetupLights() {
 	glMaterialfv(GL_FRONT,GL_EMISSION,emissiveColor);
 	*/
 }
-GLuint tex = 0;
 unsigned char letterA[] = {
 	0x00, 0x00, 0xfe, 0xc7, 0xc3, 0xc3, 0xc7, 0xfe, 0xc7, 0xc3, 0xc3, 0xc7, 0xfe
 };
@@ -80,14 +79,18 @@ void render(void) {
 	
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
+	
 	//draw_back();
-	glEnable(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D, tex);
-	for (int i = 0; i < SPRITE_NUM; i++){
-		sprite[i].rotaion +=(i%2==1?1:-0.5);
-		sprite[i].scale(0.7);
-		sprite[i].render();
-	}
+	//glEnable(GL_TEXTURE_2D);
+	//glBindTexture(GL_TEXTURE_2D, tex);
+	//for (int i = 0; i < SPRITE_NUM; i++){
+	//	sprite[i].rotaion +=(i%2==1?1:-0.5);
+	//	sprite[i].scale(0.7);
+		//sprite[i].render();
+		
+	//}
+
+	mod.render();
 
 	/*
 	glDisable(GL_LIGHTING);
@@ -122,9 +125,11 @@ void timer(int arg) {
 void setupRC(void) {
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_POLYGON);
+	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	glEnable(GL_CULL_FACE);
 	glCullFace(GL_BACK);
+	glEnable(GL_TEXTURE_2D);
 
 	//glShadeModel(GL_SMOOTH);
 	glEnable(GL_DEPTH_TEST);
@@ -132,19 +137,21 @@ void setupRC(void) {
 
 	//tex = loadTexture("../../data/3_KDJH_01.png");
 	//tex = loadTexture("../../data/hr_hair.dds");
-	tex = loadTexture("../../data/hr_body.dds");
+	//tex = loadTexture("../../data/hr_body.dds");
 
 	glewInit();
 
-	for (int i = 0; i < SPRITE_NUM; i++){
-		sprite[i].load_model("../../data/huangrong.obj");
+	mod.load("../../data/huangrong.DAE");
+	mod.create_buffer_obj();
+
+	//for (int i = 0; i < SPRITE_NUM; i++){
+	//	sprite[i].load_model("../../data/huangrong.obj");
 		//sprite[i].load_model("../../data/body.obj");
-		sprite[i].to_vbo();
+	//	sprite[i].to_vbo();
 		//sprite[i].x = rand() % 100;
 		//sprite[i].z = rand() % 100;
 		//sprite[i].scale(((double)(50+rand() % 50))/100);
-	}
-
+	//}
 
 
 	GLuint vertexShader = loadShaderFromFile(GL_VERTEX_SHADER, "../../data/vert.glsl");
@@ -165,17 +172,21 @@ void setupRC(void) {
 	//cout << sprite[0].x << ',' << sprite[0].y + 50 << ',' << sprite[0].z - 120<<'\n';
 
 	gluLookAt(0,2,2,
-		0,0,0,
-		0.0, 1.0, 0.);
+		0,1,0,
+		0.0, 1, 0);
 	//SetupLights();
 
-	GLfloat view_matrix[16];
-	glGetFloatv(GL_MODELVIEW_MATRIX, view_matrix);
-	glUniformMatrix4fv(glGetUniformLocation(program, "view_mat"), 1, GL_TRUE, view_matrix);
+	//GLfloat view_matrix[16];
+	//glGetFloatv(GL_MODELVIEW_MATRIX, view_matrix);
+	//glUniformMatrix4fv(glGetUniformLocation(program, "view_mat"), 1, GL_TRUE, view_matrix);
 
-	GLfloat projection_matrix[16];
-	glGetFloatv(GL_PROJECTION_MATRIX, projection_matrix);
-	glUniformMatrix4fv(glGetUniformLocation(program, "proj_mat"), 1, GL_TRUE, projection_matrix);
+	//GLfloat projection_matrix[16];
+	//glGetFloatv(GL_PROJECTION_MATRIX, projection_matrix);
+	//glUniformMatrix4fv(glGetUniformLocation(program, "proj_mat"), 1, GL_TRUE, projection_matrix);
+	//	GLint program;
+
+	glUniform3f(glGetUniformLocation(program, "light_dir"), 1, 3, 0);
+	glUniform4f(glGetUniformLocation(program, "light_color"), 1, 1, 1, 1);
 
 	// Get attribute slot from program
 	//
@@ -198,8 +209,6 @@ void setupRC(void) {
  *
  */
 int main(int argc, char** argv) {
-	Mode mod;
-	mod.load("../../data/skin.DAE");
 	//auto node =load_xml("../../data/skin.DAE");
 
 	//std::cout << node->name << '\n';
