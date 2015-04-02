@@ -21,9 +21,9 @@ Sprite sprite[SPRITE_NUM];
 Mode mod;
 void draw_back() {
 	glEnable(GL_BLEND);
-	glDisable(GL_TEXTURE_2D);
-	glDisable(GL_LIGHTING);
-	glBlendFunc(GL_ONE, GL_ONE);
+	//glDisable(GL_TEXTURE_2D);
+	//glDisable(GL_LIGHTING);
+	//glBlendFunc(GL_ONE, GL_ONE);
 	glColor4f(1, 0, 0,1);
 	glBegin(GL_TRIANGLES);
 		glVertex3f(1, 1, 0);
@@ -31,7 +31,7 @@ void draw_back() {
 		glVertex3f(0, 0, 0);
 	glEnd();
 	glDisable(GL_BLEND);
-	glColor4f(1, 1, 1, 1);
+	//glColor4f(1, 1, 1, 1);
 }
 
 void SetupLights() {
@@ -90,6 +90,9 @@ void render(void) {
 		
 	//}
 
+	//draw_back();
+	glRotatef(0.1, 0, 0, 1);
+	mod.render_skelecton();
 	mod.render();
 
 	/*
@@ -127,8 +130,8 @@ void setupRC(void) {
 	glPolygonMode(GL_FRONT_AND_BACK, GL_POLYGON);
 	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	glClearColor(0.0, 0.0, 0.0, 1.0);
-	glEnable(GL_CULL_FACE);
-	glCullFace(GL_BACK);
+	//glEnable(GL_CULL_FACE);
+	//glCullFace(GL_BACK);
 	glEnable(GL_TEXTURE_2D);
 
 	//glShadeModel(GL_SMOOTH);
@@ -141,7 +144,8 @@ void setupRC(void) {
 
 	glewInit();
 
-	mod.load("../../data/huangrong.DAE");
+	//mod.load("../../data/huangrong.DAE");
+	mod.load("../../data/walk.DAE");
 	mod.create_buffer_obj();
 
 	//for (int i = 0; i < SPRITE_NUM; i++){
@@ -163,7 +167,7 @@ void setupRC(void) {
 
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(60.0, 800.0 / 600.0, 1.0, 240.0);
+	gluPerspective(60.0, 800.0 / 600.0, 1.0, 1240.0);
 
 
 	glMatrixMode(GL_MODELVIEW);
@@ -171,9 +175,9 @@ void setupRC(void) {
 
 	//cout << sprite[0].x << ',' << sprite[0].y + 50 << ',' << sprite[0].z - 120<<'\n';
 
-	gluLookAt(0,2,2,
-		0,1,0,
-		0.0, 1, 0);
+	gluLookAt(0, 120,0,
+		0,0,0,
+		0.0,0, 1);
 	//SetupLights();
 
 	//GLfloat view_matrix[16];
@@ -185,7 +189,7 @@ void setupRC(void) {
 	//glUniformMatrix4fv(glGetUniformLocation(program, "proj_mat"), 1, GL_TRUE, projection_matrix);
 	//	GLint program;
 
-	glUniform3f(glGetUniformLocation(program, "light_dir"), 1, 3, 0);
+	glUniform3f(glGetUniformLocation(program, "light_dir"), 1, 0, 0);
 	glUniform4f(glGetUniformLocation(program, "light_color"), 1, 1, 1, 1);
 
 	// Get attribute slot from program
@@ -209,6 +213,17 @@ void setupRC(void) {
  *
  */
 int main(int argc, char** argv) {
+	/*
+	float mat1[16] =
+	{ 1, 0, 0, 0,
+	0, 1, 0, 0,
+	0, 0, 1, 0,
+	0, 0, 0, 1 };
+	float vector[4] =
+	{ 1, 0, 0, 0};
+	float result[4];
+	mat4x4_mul_vector(mat1, vector, result);
+	*/
 	//auto node =load_xml("../../data/skin.DAE");
 
 	//std::cout << node->name << '\n';

@@ -9,6 +9,27 @@
 using com_yoekey_3d::GLBITMAP;
 
 namespace com_yoekey_3d{
+
+	void mat4x4_mul(const float* mat1,const float* mat2,float* mat){
+		for (int i = 0; i < 16; i++){
+			mat[i] = 0;
+			int r = i / 4;
+			int c = i % 4;
+			for (int j = 0; j < 4; j++){
+				mat[i] += mat1[r * 4 + j] * mat2[j * 4 + c];
+			}
+		}
+	}
+
+	void mat4x4_mul_vector(const float* mat1, const  float* vector, float* result){
+		for (int i = 0; i < 4; i++){
+			result[i] = 0;
+			for (int j = 0; j < 4; j++){
+				result[i] += mat1[i * 4 + j] * vector[j];
+			}
+		}
+	}
+
 	GLBITMAP* FIBitmap2GLBitmap(FIBITMAP *fibmp){
 		int i, j, k;
 		int pitch = FreeImage_GetPitch(fibmp);

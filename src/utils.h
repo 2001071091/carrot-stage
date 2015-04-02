@@ -49,6 +49,9 @@ namespace com_yoekey_3d {
 	xml_node* load_xml(const char *filename);
 	void free_xml_node(xml_node*);
 	const char* get_xml_node_attrib(xml_node node, const char* name);
+
+	void mat4x4_mul(const float* mat1, const float* mat2, float* result);//矩阵相乘
+	void mat4x4_mul_vector(const float* mat, const float* vector, float* result);//矩阵乘列向量
 }
 
 #endif

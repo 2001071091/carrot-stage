@@ -1,4 +1,4 @@
-﻿生成启动时间为 2015/3/30 16:42:51。
+﻿生成启动时间为 2015/4/2 18:00:46。
      1>项目“E:\carrot-stage\VisualStudio\glut\glut.vcxproj”在节点 2 上(Build 个目标)。
      1>Link:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\carrot-stage\VisualStudio\Release\glut.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\carrot-stage\VisualStudio\Release\glut.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\carrot-stage\VisualStudio\Release\glut.lib" /MACHINE:X86 /SAFESEH Release\main.obj
@@ -10,4 +10,4 @@
 
 生成成功。
 
-已用时间 00:00:00.92
+已用时间 00:00:01.22
