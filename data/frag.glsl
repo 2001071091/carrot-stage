@@ -55,7 +55,7 @@ void main(void){
 	
 	//高光反射
 	vec4 s_color =texture_idx[3]==-1?specular:getTexture(texture_idx[3],tex_coord);
-	
-	gl_FragColor =vec4(0.5,0.5,0.5,1)+d_color;
+
+	gl_FragColor =test;//vec4(0.5,0.5,0.5,1)+d_color;
 }
 

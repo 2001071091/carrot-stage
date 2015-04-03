@@ -52,6 +52,9 @@ namespace com_yoekey_3d {
 
 	void mat4x4_mul(const float* mat1, const float* mat2, float* result);//矩阵相乘
 	void mat4x4_mul_vector(const float* mat, const float* vector, float* result);//矩阵乘列向量
+	int mat4x4_inverse(const float* mat, float* result);
+	void mat4x4_transpose(const float* mat, float* result);
+	void matrix_printf(const float* mat, int r, int c);
 }
 
 #endif

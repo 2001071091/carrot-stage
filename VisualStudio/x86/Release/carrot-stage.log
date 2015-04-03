@@ -1,4 +1,4 @@
-﻿生成启动时间为 2015/4/2 18:00:43。
+﻿生成启动时间为 2015/4/3 15:08:22。
      1>项目“E:\carrot-stage\VisualStudio\carrot-stage.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D CARROTSTAGE_EXPORTS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x86\Release\\" /Fd"x86\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\Mode.cpp ..\src\Sprite.cpp ..\src\utils.cpp
@@ -6,93 +6,98 @@
      1>..\src\Mode.cpp(6): warning C4018: “<”: 有符号/无符号不匹配
      1>..\src\Mode.cpp(14): warning C4018: “<”: 有符号/无符号不匹配
      1>..\src\Mode.cpp(23): warning C4018: “>=”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(39): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(54): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(170): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(205): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(353): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(363): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(374): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+     1>..\src\Mode.cpp(42): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(173): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(203): warning C4305: “初始化”: 从“double”到“float”截断
+     1>..\src\Mode.cpp(204): warning C4305: “初始化”: 从“double”到“float”截断
+     1>..\src\Mode.cpp(210): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(248): warning C4305: “初始化”: 从“double”到“float”截断
+     1>..\src\Mode.cpp(249): warning C4305: “初始化”: 从“double”到“float”截断
+     1>..\src\Mode.cpp(255): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(418): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(428): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(439): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(245) : 参见“strdup”的声明
-     1>..\src\Mode.cpp(390): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+     1>..\src\Mode.cpp(455): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(245) : 参见“strdup”的声明
-     1>..\src\Mode.cpp(399): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+     1>..\src\Mode.cpp(464): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(245) : 参见“strdup”的声明
-     1>..\src\Mode.cpp(479): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(488): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(498): warning C4018: “>=”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(528): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(531): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(544): warning C4018: “<”: 有符号/无符号不匹配
      1>..\src\Mode.cpp(553): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(569): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(631): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(635): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(644): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(653): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(662): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(670): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(695): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(708): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(717): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(722): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(752): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(762): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(771): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(811): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(820): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(824): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(830): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(837): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(840): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(847): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(848): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(863): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(869): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(873): warning C4018: “>=”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(874): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(881): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(893): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(900): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-     1>..\src\Mode.cpp(917): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(926): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(563): warning C4018: “>=”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(593): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(596): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(618): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(634): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(696): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(700): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(709): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(718): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(727): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(735): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(760): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(773): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(782): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(787): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(817): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(827): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(836): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(876): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(885): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(889): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(895): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(902): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(905): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(911): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(912): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(930): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(936): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(940): warning C4018: “>=”: 有符号/无符号不匹配
      1>..\src\Mode.cpp(941): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(963): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(966): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(974): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(976): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(988): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(994): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(998): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1008): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1016): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1024): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1032): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(948): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(960): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(967): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>..\src\Mode.cpp(984): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(993): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1009): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1031): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1034): warning C4018: “<”: 有符号/无符号不匹配
      1>..\src\Mode.cpp(1042): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1061): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1066): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1069): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1070): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1074): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1076): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1081): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1082): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1044): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1057): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1063): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1067): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1077): warning C4018: “<”: 有符号/无符号不匹配
      1>..\src\Mode.cpp(1085): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1089): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1090): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1125): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+     1>..\src\Mode.cpp(1093): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1101): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1111): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1130): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1135): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1138): warning C4018: “<”: 有符号/无符号不匹配
      1>..\src\Mode.cpp(1139): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1141): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1144): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1162): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1165): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1171): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1171): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
-     1>..\src\Mode.cpp(1173): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1173): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
-     1>..\src\Mode.cpp(1175): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1175): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
-     1>..\src\Mode.cpp(1177): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\Mode.cpp(1177): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>..\src\Mode.cpp(1143): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1145): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1150): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1151): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1154): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1158): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1159): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1194): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+     1>..\src\Mode.cpp(1208): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1210): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1213): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1242): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1245): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1251): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1251): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>..\src\Mode.cpp(1253): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1253): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>..\src\Mode.cpp(1255): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1255): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+     1>..\src\Mode.cpp(1257): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\Mode.cpp(1257): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
          Sprite.cpp
      1>..\src\Sprite.cpp(104): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
@@ -125,20 +130,25 @@
      1>..\src\Sprite.cpp(131): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
          utils.cpp
-     1>..\src\utils.cpp(290): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\utils.cpp(295): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\utils.cpp(304): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\utils.cpp(309): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\utils.cpp(316): warning C4018: “<”: 有符号/无符号不匹配
-     1>..\src\utils.cpp(400): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\src\utils.cpp(46): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\utils.cpp(52): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\utils.cpp(55): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\utils.cpp(81): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\utils.cpp(87): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>..\src\utils.cpp(390): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\utils.cpp(395): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\utils.cpp(404): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\utils.cpp(409): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\utils.cpp(416): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\src\utils.cpp(500): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
-     1>..\src\utils.cpp(422): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\src\utils.cpp(522): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
-     1>..\src\utils.cpp(424): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\src\utils.cpp(524): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
-     1>..\src\utils.cpp(426): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\src\utils.cpp(526): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
-     1>..\src\utils.cpp(521): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>..\src\utils.cpp(621): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
        Lib:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\dist\lib\x86\carrot-stage.lib" /NOLOGO /LTCG x86\Release\Mode.obj
@@ -156,4 +166,4 @@
 
 生成成功。
 
-已用时间 00:00:02.32
+已用时间 00:00:02.42

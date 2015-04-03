@@ -56,6 +56,7 @@ public:
 	void delete_buffer_obj();//删除Buffer Object
 	void render();
 	void render_skelecton();
+	void render_bind_skelecton();
 private:
 	/*顶点数据*/
 	vector<GLfloat> verts;		//顶点位置

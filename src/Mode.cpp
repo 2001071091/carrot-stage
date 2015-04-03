@@ -31,8 +31,11 @@ void Mode::pose_bone(int idx, int frame, const float* parent_world_matrix){
 		//mat4x4_mul(bone->joint_matrix, parent_world_matrix, bone->world_matrix);
 	}
 	//影响皮肤的矩阵还需要乘上一个inverse_bind_matrix
-	printf("%d(%f %f %f %f)\n", bone->id, bone->inverse_bind_matrix[0], bone->inverse_bind_matrix[1], bone->inverse_bind_matrix[2], bone->inverse_bind_matrix[3]);
 	mat4x4_mul(bone->world_matrix, bone->inverse_bind_matrix, bone->skinning_matrix);
+
+	//printf("idx[%d]\n", bone->joint_idx);
+	//matrix_printf(bone->skinning_matrix,4,4);
+	//printf("\n");
 	
 	//处理子骨骼
 	if (bone->child_count>0)
@@ -59,7 +62,7 @@ Mode::~Mode()
 	if (joints_matrics != NULL)free(joints_matrics);
 }
 //字符串比较
-#define EQUAL(a,b) strcmp(a, b) == 0//字符串比较
+#define EQUAL(a,b) ((a==NULL||b==NULL)?false:(strcmp(a, b) == 0))//字符串比较
 #define SPLIT_STRING_2(var,count,src,type,convertFun) \
 	char type_tmp[50];\
 	int idx_src = 0, idx_tmp = 0, idx_data = 0;\
@@ -192,25 +195,87 @@ void Mode::delete_buffer_obj(){
 	in_bo = false;
 }
 
+void Mode::render_bind_skelecton(){
+	glEnable(GL_BLEND);
+	glColor4f(1, 0, 0, 1);
+	glBegin(GL_TRIANGLES);
+	float v1[4] = { 0, 0.5, 0, 1 };
+	float v2[4] = { 0, -0.3, 0.5, 1 };
+	float v3[4] = { 0, -0.3, -0.5, 1 };
+	float v4[4] = { 0, 0, 0, 1 };
+	float v_1[4];
+	float v_2[4];
+	float v_3[4];
+	float v_4[4];
+	for (int i = 0; i < skeleton.joints.size(); i++){
+		Bone* bone = skeleton.joints[i];
+		if (bone->parent_id == -1)continue;
+		Bone* parent = skeleton.bones[bone->parent_id];
+		float mat[16];
+		mat4x4_inverse(parent->inverse_bind_matrix, mat);
+		mat4x4_mul_vector(mat, v1, v_1);
+		mat4x4_mul_vector(mat, v2, v_2);
+		mat4x4_mul_vector(mat, v3, v_3);
+		mat4x4_inverse(bone->inverse_bind_matrix, mat);
+		mat4x4_mul_vector(mat, v4, v_4);
+
+		glVertex3fv(v_1);
+		glVertex3fv(v_2);
+		glVertex3fv(v_3);
+
+		glVertex3fv(v_1);
+		glVertex3fv(v_2);
+		glVertex3fv(v_4);
+
+		glVertex3fv(v_2);
+		glVertex3fv(v_3);
+		glVertex3fv(v_4);
+
+		glVertex3fv(v_3);
+		glVertex3fv(v_1);
+		glVertex3fv(v_4);
+		//glEnd();
+	}
+	glEnd();
+	glDisable(GL_BLEND);
+}
+
 void Mode::render_skelecton(){
 	glEnable(GL_BLEND);
 	glColor4f(1, 0, 0, 1);
 	glBegin(GL_TRIANGLES);
-	float v1[4] = { 0, 1, 0, 1 };
-	float v2[4] = { 1, 0, 0, 1 };
-	float v3[4] = { -1, 0, 0, 1 };
+	float v1[4] = { 0, 0.5, 0, 1 };
+	float v2[4] = { 0, -0.3, 0.5, 1 };
+	float v3[4] = { 0, -0.3, -0.5, 1 };
+	float v4[4] = { 0, 0, 0, 1 };
 	float v_1[4];
 	float v_2[4];
 	float v_3[4];
-	for (int i = 0; i < skeleton.bones.size(); i++){
-		mat4x4_mul_vector(skeleton.bones[i]->world_matrix, v1, v_1);
-		mat4x4_mul_vector(skeleton.bones[i]->world_matrix, v2, v_2);
-		mat4x4_mul_vector(skeleton.bones[i]->world_matrix, v3, v_3);
-		//printf("%d(%f %f %f %f)\n", skeleton.bones[i]->id, v2[0], v2[1], v2[2], v2[3]);
-		//glBegin(GL_LINE);
+	float v_4[4];
+	for (int i = 0; i < skeleton.joints.size(); i++){
+		Bone* bone = skeleton.joints[i];
+		if (bone->parent_id == -1)continue;
+		Bone* parent = skeleton.bones[bone->parent_id];
+		mat4x4_mul_vector(parent->world_matrix, v1, v_1);
+		mat4x4_mul_vector(parent->world_matrix, v2, v_2);
+		mat4x4_mul_vector(parent->world_matrix, v3, v_3);
+		mat4x4_mul_vector(bone->world_matrix, v4, v_4);
+
 		glVertex3fv(v_1);
 		glVertex3fv(v_2);
 		glVertex3fv(v_3);
+
+		glVertex3fv(v_1);
+		glVertex3fv(v_2);
+		glVertex3fv(v_4);
+
+		glVertex3fv(v_2);
+		glVertex3fv(v_3);
+		glVertex3fv(v_4);
+
+		glVertex3fv(v_3);
+		glVertex3fv(v_1);
+		glVertex3fv(v_4);
 		//glEnd();
 	}
 	glEnd();
@@ -839,7 +904,6 @@ skin load_dae_skin(xml_node node,int joint_idx_offset,const char** sids,int sid_
 					result.joints = (joint*)malloc(sizeof(joint)*result.joint_count);
 					for (int j = 0; j < result.joint_count; j++){
 						result.joints[j].id = source.name_data[j];
-						//printf("joint id[%s]\n", result.joints[j].id);
 					}
 				}
 				else if (EQUAL(semantic, "INV_BIND_MATRIX")){
@@ -848,6 +912,9 @@ skin load_dae_skin(xml_node node,int joint_idx_offset,const char** sids,int sid_
 					for (int j = 0; j < result.joint_count; j ++){
 						result.joints[j].idx = j + joint_idx_offset;
 						memcpy(result.joints[j].matrix, source.data + j*source.stride, 16*sizeof(float));
+						printf("joint id[%s] idx[%d]\n", result.joints[j].id, result.joints[j].idx);
+						//matrix_printf(result.joints[j].matrix, 4, 4);
+						//printf("\n");
 					}
 				}
 			}
@@ -931,6 +998,7 @@ Bone* create_bone(node *n,SkeletonData* skeleton){
 	Bone* bone = (Bone*)malloc(sizeof(Bone));
 	skeleton->bones.push_back(bone);
 	bone->id = skeleton->bones.size() - 1;
+	bone->parent_id = -1;
 	n->bone_idx = bone->id;
 	bone->child_count = n->child_count;
 	bone->children = (int*)malloc(sizeof(int)*n->child_count);
@@ -976,6 +1044,7 @@ void Mode::load_dae(const char* path){
 		for (int j = 0; j < scene.node_count; j++){
 			node* node = &scene.nodes[j];
 			if (node->has_matrix){
+				//printf("%s\n",node->type);
 				make_node_map(&node_map, node);
 				Bone* rb =create_bone(node, &skeleton);
 				skeleton.roots.push_back(rb);
@@ -1148,6 +1217,17 @@ void Mode::load_dae(const char* path){
 			bone->joint_idx = joint.idx;
 			//将bind_shape_matrix和joint_matrix相乘作为该骨骼的inverse_bind_matrix
 			mat4x4_mul(joint.matrix, skin.bind_shape_matrix, bone->inverse_bind_matrix);
+			float mattest[16];
+			if (mat4x4_inverse(bone->inverse_bind_matrix, mattest) == 0){
+				printf("error joint[%s]\n", joint.id);
+				float *pmat = bone->inverse_bind_matrix;
+					printf("%f,%f,%f,%f\n%f,%f,%f,%f\n%f,%f,%f,%f\n%f,%f,%f,%f\n\n",
+						pmat[0], pmat[1], pmat[2], pmat[3],
+						pmat[4], pmat[5], pmat[6], pmat[7],
+						pmat[8], pmat[9], pmat[10], pmat[11],
+						pmat[12], pmat[13], pmat[14], pmat[15]
+						);
+			}
 			//printf("joint[%d,%s],bone[%d,%s]\n", joint.idx, joint.id, n->bone_idx, n->sid);
 			skeleton.joints.push_back(bone);
 		}

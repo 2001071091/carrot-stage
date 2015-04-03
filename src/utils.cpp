@@ -9,7 +9,106 @@
 using com_yoekey_3d::GLBITMAP;
 
 namespace com_yoekey_3d{
+	void matrix_printf(const float* mat,int r,int c){
+		for (int i = 0; i < r; i++){
+			for (int j = 0; j < c; j++)
+			if (j == c - 1)
+				printf("\t%f", mat[i*c + j]);
+			else
+				printf("\t%f,", mat[i*c + j]);
+			printf("\n");
+		}
+	}
+	int brinv(float a[], int n)
+	{
+		int *is, *js, i, j, k, l, u, v;
+		double d, p;
+		is = (int*)malloc(n*sizeof(int));
+		js = (int*)malloc(n*sizeof(int));
+		for (k = 0; k <= n - 1; k++)
+		{
+			d = 0.0;
+			for (i = k; i <= n - 1; i++)
+			for (j = k; j <= n - 1; j++)
+			{
+				l = i*n + j; p = fabs(a[l]);
+				if (p>d) { d = p; is[k] = i; js[k] = j; }
+			}
+			if (d + 1.0 == 1.0)
+			{
+				free(is); free(js); //printf("err**not inv\n");
+				return(0);
+			}
+			if (is[k] != k)
+			for (j = 0; j <= n - 1; j++)
+			{
+				u = k*n + j; v = is[k] * n + j;
+				p = a[u]; a[u] = a[v]; a[v] = p;
+			}
+			if (js[k] != k)
+			for (i = 0; i <= n - 1; i++)
+			{
+				u = i*n + k; v = i*n + js[k];
+				p = a[u]; a[u] = a[v]; a[v] = p;
+			}
+			l = k*n + k;
+			a[l] = 1.0 / a[l];
+			for (j = 0; j <= n - 1; j++)
+			if (j != k)
+			{
+				u = k*n + j; a[u] = a[u] * a[l];
+			}
+			for (i = 0; i <= n - 1; i++)
+			if (i != k)
+			for (j = 0; j <= n - 1; j++)
+			if (j != k)
+			{
+				u = i*n + j;
+				a[u] = a[u] - a[i*n + k] * a[k*n + j];
+			}
+			for (i = 0; i <= n - 1; i++)
+			if (i != k)
+			{
+				u = i*n + k; a[u] = -a[u] * a[l];
+			}
+		}
+		for (k = n - 1; k >= 0; k--)
+		{
+			if (js[k] != k)
+			for (j = 0; j <= n - 1; j++)
+			{
+				u = k*n + j; v = js[k] * n + j;
+				p = a[u]; a[u] = a[v]; a[v] = p;
+			}
+			if (is[k] != k)
+			for (i = 0; i <= n - 1; i++)
+			{
+				u = i*n + k; v = i*n + is[k];
+				p = a[u]; a[u] = a[v]; a[v] = p;
+			}
+		}
+		free(is); free(js);
+		return(1);
+	}
 
+	/*ÇóÄæ¾ØÕó*/
+	int mat4x4_inverse(const float *mat,float * result){
+		memcpy(result, mat, sizeof(float)* 16);
+		return brinv(result, 4);
+	}
+
+	/*¾ØÕó×ªÖÃº¯Êý*/
+	void mat4x4_transpose(const float *z, float *result)
+	{
+		int i, j;
+
+		/*×ªÖÃ*/
+		for (i = 0; i<4; i++)
+		for (j = 0; j < 4; j++)
+			result[i * 4 + j] = z[j * 4 + i];
+	}
+
+	/*¾ØÕó³Ë·¨*/
 	void mat4x4_mul(const float* mat1,const float* mat2,float* mat){
 		for (int i = 0; i < 16; i++){
 			mat[i] = 0;
@@ -21,6 +120,7 @@ namespace com_yoekey_3d{
 		}
 	}
 
+	/*¾ØÕó³ËÁÐÏòÁ¿*/
 	void mat4x4_mul_vector(const float* mat1, const  float* vector, float* result){
 		for (int i = 0; i < 4; i++){
 			result[i] = 0;

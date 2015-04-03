@@ -92,9 +92,10 @@ void render(void) {
 
 	//draw_back();
 	glRotatef(0.1, 0, 0, 1);
-	mod.render_skelecton();
-	mod.render();
 
+	mod.render();
+	//mod.render_bind_skelecton();
+	//mod.render_skelecton();
 	/*
 	glDisable(GL_LIGHTING);
 	glMatrixMode(GL_PROJECTION);
@@ -175,9 +176,9 @@ void setupRC(void) {
 
 	//cout << sprite[0].x << ',' << sprite[0].y + 50 << ',' << sprite[0].z - 120<<'\n';
 
-	gluLookAt(0, 120,0,
-		0,0,0,
-		0.0,0, 1);
+	gluLookAt(0, 60,60,
+		0,0,40,
+		0,0,1);
 	//SetupLights();
 
 	//GLfloat view_matrix[16];
@@ -215,14 +216,20 @@ void setupRC(void) {
 int main(int argc, char** argv) {
 	/*
 	float mat1[16] =
-	{ 1, 0, 0, 0,
+	{ 1, 1, 0, 100,
 	0, 1, 0, 0,
 	0, 0, 1, 0,
 	0, 0, 0, 1 };
+	float mat1_inv[16];
+	mat4x4_inverse(mat1, mat1_inv);
 	float vector[4] =
-	{ 1, 0, 0, 0};
+	{ 1, 0.5, 0, 1};
 	float result[4];
+	float result2[4];
 	mat4x4_mul_vector(mat1, vector, result);
+	printf("%f,%f,%f,%f\n", result[0], result[1], result[2], result[3]);
+	mat4x4_mul_vector(mat1_inv, result, result2);
+	printf("%f,%f,%f,%f\n", result2[0], result2[1], result2[2], result2[3]);
 	*/
 	//auto node =load_xml("../../data/skin.DAE");
 
